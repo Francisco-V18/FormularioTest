@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial scale=1.0">
+<title>Formulario de inscripcion</title>
+    </head>
+    <body>
+        <h1> Formulario de Inscripcion</h1>
+
+        <form>
+
+        <!--Datos personales-->
+        <fieldset>
+            <legend> Datos personales</legend>
+
+            <label> Apellidos:
+<input type="text"
+name="Apellidos" required>
+            </label>
+
+            <label> Nombres:
+                <input type="text"
+                name="Nombres" required>
+            </label>
+
+            <label> Apodos:
+<input type="text"
+name="Apodo">
+            </label>
+
+            <label> Cedula o Pasaporte:
+                <input type="text" name="cedula" required>
+            </label>
+
+            <p> Sexo:</p>
+            <label><input type="radio"
+                name="Sexo" value="M" required>
+                Masculino</label>
+                <label> <input type="radio"
+                name="sexo" value="F"> Femenino</label>
+
+                <label> Estado civil
+                    <select name="estado_Civil"
+                    required>
+                <option value="soltero">Soltero/a</option>
+                <option
+                value="Casado">Casado/a</option>
+                <option
+                value="divorciado"> Divorciado/a</option>
+                <option 
+                value="Union_libre">Union Libre</option>
+                </select>
+                </label>
+
+                <label> Direccion:
+                    <input type="text"
+                    name="direccion">
+                </label>
+
+                <laber> Provincia:
+                    <input type="text"
+                    name="provincia">
+                
+                </laber>
+                
+                <label> Ciudad
+                    <input type="text"
+                    name="Ciudad">
+               </label>
+               <label> Municipio
+                <input type="text"
+                name="municipio">
+               </label>
+
+               <label> Sector/Barrio: 
+                <input type="text"
+                name="Sector">
+
+            </label>
+
+            <label> Telefono Residencial:
+                <input type="tel"
+                name="tel_residencial">
+            </label>
+
+            <label> Telefono Celular:
+                <input type="Tel"
+                name="tel_celular" required>
+            </label>
+
+            <label> Fecha de Nacimiento:
+                <input type="date"
+                name="Fecha_Nacimiento" required>
+            </label>
+
+            <label> Edad:
+                <input type="number"
+                name="edad" min="1" max="100" required>
+            </label>
+            <label> Lugar de Nacimiento:
+                <input type="text"
+                name="Lugar_Nacimiento">
+
+            </label>
+
+            <label> Correo Electronico:
+                <input type="email"name="email" required>
+            </label>
+
+            <p> ¿Tiene discapacidad?</p>
+            <label> <input type="radio"
+            name="discapacidad" value="si">SI</label>
+        
+            <label> <input type="radio"
+            name="discapacidad" value="no"
+            checked>No"</label>
+
+            <p> En caso afirmativo especifique</p>
+            <label> <input type="checkbox"
+            name="auditiva">Auditiva</label>
+            <label><input type="checkbox"
+            name="matriz"> Matriz</label>
+            <label><input type="checkbox"
+            name="intelectual">Intelectual</label>
+
+        </fieldset>
+<!--DATOS EDUCACIONALES -->
+<fieldset>
+    <legend>Datos de educacion</legend>
+
+    <p>¿Estudia Actualmente?</p>
+    <label><input type="radio"
+    name="Estudia"value"SI">Si</label>
+    <label><input type="radio"
+        name="Estudia"value="No" checked> No</label>
+
+        <label> Horario:
+            <input type="text"
+            name="Horario">
+
+            <label>Nivel de educacion:
+<select name="nivel">
+    <option value="">Seleccione</option>
+
+    <option>Basica</option>
+    <option>Media</option>
+    <option>Universitario Incompleto</option>
+    <option>Universitario Completo</option>
+              </select>
+            </label>
+
+            <label>Grado/ Nivel/ Carrera</ Profesion:
+                <input type="text"
+                name="Carrera">
+
+    </label>
+</fieldset>
+
+<!--DATOS de TRABJO -->
+<fieldset>
+    <legend> Datos de Trabajo</legend>
+    <p> Situacion de trabjo:</p>
+    <label><input type="radio"
+    name="Trabajo"value="Empleado">
+Empleado</label>
+<label><input type="radio"
+name="laboral"value="Desempleado">
+Desempleado</label>
+<label><input type="radio"
+    name="laboral" value="Primer_empleo">
+    Buscando primer Trabajo</label>
+    <label><input type="radio"
+     name="laboral" value="cuenta_propia">
+     Trabajo por cuenta propia</label>
+      <label><input type="radio"
+      name="laboral" value="Obrero">
+      Obrero</label>
+      <label><input type="radio"
+        name="laboral" value="Empresa_Familiar">
+        Empresa Familiar</label>
+
+        <label>Nombre de la Empresa:
+            <input type="text"
+            name="empresa">
+        </label>
+
+        <label> Telefono de la empresa:
+            <input type="tel"
+            name="Tel_empresa">
+        </label>
+
+        <label>Puesto Actual:
+            <input type="text"
+            name=Puesto>
+        </label>
+
+        <label> Horario de Trabajo:
+            <input type="text"
+            name="Horario_trabajo">
+        </label>
+
+        <label> Actividad de la empresa
+            <input type="text"
+            name="Actividad_empresa">
+        </label>
+</fieldset>
+
+<!--BOTON-->
+<button type="submit">Enviar Formulario</button>
+
+        </form>
+    </body>
